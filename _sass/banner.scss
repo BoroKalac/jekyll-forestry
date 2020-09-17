@@ -1,0 +1,19 @@
+.banner-container {
+  padding: 0px 30px;
+  background-color: #3ab0b5;
+  display: flex;
+    align-items: center;
+    font-size: 20px;
+
+  .sos-text {
+    display: inline;
+    color: #fff;
+  }
+
+  img {
+    width: 50px;
+    display: inline-flex;
+    margin: 30px 30px 30px 20px;
+  }
+}
+

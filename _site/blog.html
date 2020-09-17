@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <script type="text/javascript" src="/assets/js/navigation.js"></script>
+    <script src="https://kit.fontawesome.com/ff530a4a56.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      /*
+      here you can add user_data to config object
+      eg.   
+      custom_user_data = {
+              externalId: "your_id_for_user",
+              email: "email",
+              username: "username",
+              firstname: "user_first_name",
+              lastname: "user_last_name",
+              additionalFields: "nickname=userNickname; phoneNumber=121212"
+      };
+      */
+  
+       if("undefined"!==typeof requirejs)window.onload=function(e){requirejs(["https://paldesk.io/api/widget-client?apiKey=d95de79f8b5d13418d03b0f2c01b8821"],function(e){"undefined"!==typeof custom_user_data&&(beebeeate_config.user_data=custom_user_data),BeeBeeate.widget.new(beebeeate_config)})};
+      else{var s=document.createElement("script");s.async=!0,s.src="https://paldesk.io/api/widget-client?apiKey=d95de79f8b5d13418d03b0f2c01b8821",s.onload=function(){"undefined"!==typeof custom_user_data&&(beebeeate_config.user_data=custom_user_data),BeeBeeate.widget.new(beebeeate_config)};
+      if(document.body){
+          document.body.appendChild(s)
+      }
+      else if(document.head){
+          document.head.appendChild(s)
+      }
+      }
+  
+  </script>
+  </head>
+  <body>
+    <header class="top-header">
+    <ul class="top-header-list">
+        <li><a href="tel:116-111">Pozovite: <strong>116 111</strong></a></li>
+        <li class="chat-container"><button class="chat-button" onclick=window.BeeBeeate.widget.openChat()><img src="/assets/images/speech-bubble.png" alt="">SOS Chat</button></li>
+    </ul>
+</header>
+    <nav class="navigation-top" id="navigationTop">
+  <div class="logo-container">
+    <a href="/"><img class="logo" src="/assets/images/Logo-nadel.png" alt=""></a>
+  </div>
+  <div class="list-container">
+    
+      <a href="/" >
+        <span>Početna</span>
+      </a>
+    
+      <a href="/6-12.html" >
+        <span>Deca (6-12)</span>
+      </a>
+    
+      <a href="/13-18.html" >
+        <span>Tinejdžeri (13-18)</span>
+      </a>
+    
+      <a href="/19-30.html" >
+        <span>Mladi (19 i više)</span>
+      </a>
+    
+      <a href="/roditelji.html" >
+        <span>Roditelji</span>
+      </a>
+    
+      <a href="/o-nadelu.html" >
+        <span>O NADEL-u</span>
+      </a>
+    
+      <a href="/blog.html"  class="menu-item-active">
+        <span>Blog</span>
+      </a>
+    
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</nav>
+    <div id="banner-container-id" class="banner-container">
+        <img src="/assets/images/info.png" alt="">
+        <div>
+            <p class="sos-text"><b>SOS chat</b> je usluga koja svoj deci i mladim ljudima u Srbiji omogućava da u bilo kom trenutku dobiju savetodavnu podršku putem besplatnog chat-a sa našim savetnicima, ukoliko se nađu u okolnostima u kojima su im ugrožena prava, ili u bilo kojoj drugoj situaciji kada osete potrebu za a poverljivim razgovorom sa kompetentnom osobom.</p>
+        </div>
+</div>
+    <div class="blog-page-container">
+  <h1 class="blog-page-title">Blog</h1>
+  <div class="grid-container">
+    <ul>
+      
+        <div class="single-post-container">
+          <li>
+            <a href="/2020/09/17/test-blog-post.html">
+              <img class="blog-page-post-image" src="" alt="">
+            </a>
+            <div class="title-date-container">
+              <div class="post-date-container">
+                17 Sep 2020
+              </div>
+              <h2 class="post-title"><a href="/2020/09/17/test-blog-post.html">Test blog post</a></h2>
+            </div>
+            <div class="post-excerpt-container">
+              <p>
+                test test test
+
+              </p>
+            </div>
+            <p class="read-more"><a href="/2020/09/17/test-blog-post.html">Pročitaj članak ></a></p>
+          </li>
+        </div>
+      
+        <div class="single-post-container">
+          <li>
+            <a href="/2020/09/01/%C5%A1ta-je-nadel.html">
+              <img class="blog-page-post-image" src="/assets/images/untitled-design-1-.png" alt="">
+            </a>
+            <div class="title-date-container">
+              <div class="post-date-container">
+                01 Sep 2020
+              </div>
+              <h2 class="post-title"><a href="/2020/09/01/%C5%A1ta-je-nadel.html">Šta je NADEL?</a></h2>
+            </div>
+            <div class="post-excerpt-container">
+              <p>
+                ZDRAVO! NADEL je skraćenica (acronym) za savetodavnu telefonsku uslugu koja nosi ime NAcionalna DEčija Linija. Ponosni smo što već 10 godina deca i mladi u Srbiji mogu da pozovu besplatan broj 116 111 i razgovaraju o temama koje su im...
+              </p>
+            </div>
+            <p class="read-more"><a href="/2020/09/01/%C5%A1ta-je-nadel.html">Pročitaj članak ></a></p>
+          </li>
+        </div>
+      
+        <div class="single-post-container">
+          <li>
+            <a href="/2020/09/01/pona%C5%A1anje-dece-%C5%BErtava-seksualnog-nasilja.html">
+              <img class="blog-page-post-image" src="/assets/images/untitled-design-3-.jpg" alt="">
+            </a>
+            <div class="title-date-container">
+              <div class="post-date-container">
+                01 Sep 2020
+              </div>
+              <h2 class="post-title"><a href="/2020/09/01/pona%C5%A1anje-dece-%C5%BErtava-seksualnog-nasilja.html">Ponašanje dece žrtava seksualnog nasilja</a></h2>
+            </div>
+            <div class="post-excerpt-container">
+              <p>
+                Na seminarima i u sredstvima javnog informisanja najviše se govori o slučajevima seksualnog zlostavljanja dece i ponašanju dece koja su seksualno zlostavljana. Govori se o detetu kao žrtvi, o načinu ispitivanja deteta koje je seksualno zlostavljano, otkrivanju, odnosno obelodanjivanju kao...
+              </p>
+            </div>
+            <p class="read-more"><a href="/2020/09/01/pona%C5%A1anje-dece-%C5%BErtava-seksualnog-nasilja.html">Pročitaj članak ></a></p>
+          </li>
+        </div>
+      
+        <div class="single-post-container">
+          <li>
+            <a href="/2020/09/01/psihoseksualni-identitet.html">
+              <img class="blog-page-post-image" src="/assets/images/untitled-design-2-.jpg" alt="">
+            </a>
+            <div class="title-date-container">
+              <div class="post-date-container">
+                01 Sep 2020
+              </div>
+              <h2 class="post-title"><a href="/2020/09/01/psihoseksualni-identitet.html">Psihoseksualni identitet</a></h2>
+            </div>
+            <div class="post-excerpt-container">
+              <p>
+                POJAM IDENTITETA— nastanak i značenje U psihologiji ličnosti identitet (lat. identitas= istovetnost) označava doživljaj suštinske istovetnosti i kontinuiteta ja tokom dužeg vremena, bez obzira na njegove mene u različitim periodima i okolnostima. Psihoseksualni razvoj, prema Frojdu, definisan je postizanjem genitalne...
+              </p>
+            </div>
+            <p class="read-more"><a href="/2020/09/01/psihoseksualni-identitet.html">Pročitaj članak ></a></p>
+          </li>
+        </div>
+      
+        <div class="single-post-container">
+          <li>
+            <a href="/2020/09/01/vr%C5%A1nja%C4%8Dko-nasilje.html">
+              <img class="blog-page-post-image" src="/assets/images/untitled-design-1-.jpg" alt="">
+            </a>
+            <div class="title-date-container">
+              <div class="post-date-container">
+                01 Sep 2020
+              </div>
+              <h2 class="post-title"><a href="/2020/09/01/vr%C5%A1nja%C4%8Dko-nasilje.html">Vršnjačko nasilje</a></h2>
+            </div>
+            <div class="post-excerpt-container">
+              <p>
+                Vršnjačko nasilje se događa kada je neko ko je slabiji i povučeniji izložen namernom povređivanju, od strane drugog deteta koje oseća i ponaša se kao da je jače i ima moć, a da za to ne postoji konkretan razlog. Zlostavljanje...
+              </p>
+            </div>
+            <p class="read-more"><a href="/2020/09/01/vr%C5%A1nja%C4%8Dko-nasilje.html">Pročitaj članak ></a></p>
+          </li>
+        </div>
+      
+        <div class="single-post-container">
+          <li>
+            <a href="/2020/09/01/kako-da-razgovarate-sa-svojom-decom.html">
+              <img class="blog-page-post-image" src="/assets/images/untitled-design.jpg" alt="">
+            </a>
+            <div class="title-date-container">
+              <div class="post-date-container">
+                01 Sep 2020
+              </div>
+              <h2 class="post-title"><a href="/2020/09/01/kako-da-razgovarate-sa-svojom-decom.html">Kako da razgovarate sa svojom decom</a></h2>
+            </div>
+            <div class="post-excerpt-container">
+              <p>
+                Da li ste se nekad zapitali koji je odnos pozitivnih, ohrabrujućih reći koje u toku dana kažete svom detetu u odnosu na reči žalbi, kritika, naredbi, upozorenja i obeshrabrenja. Deca imaju utisak da je odnos pozitivnih i negativnih reči koje...
+              </p>
+            </div>
+            <p class="read-more"><a href="/2020/09/01/kako-da-razgovarate-sa-svojom-decom.html">Pročitaj članak ></a></p>
+          </li>
+        </div>
+      
+    </ul>
+  </div>
+</div>
+    <footer class="footer-container">
+    <section class="footer-main">
+        <div class="footer-main-item">
+            <h2 class="footer-title">O nama</h2>
+                <ul>
+                    <li><a href="/o-nadelu.html">O NADELU</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                </ul>
+        </div>
+        <div class="footer-main-item">
+            <h2 class="footer-title">Chat i telefon</h2>
+                <ul>
+                    <li><a href="/6-12.html">Deca</a></li>
+                    <li><a href="/13-18.html">Tinejdžeri</a></li>
+                    <li><a href="/19-30.html">Mladi</a></li>
+                    <li><a href="/roditelji.html">Roditelji</a></li>
+                </ul>
+        </div>
+        <div class="footer-main-item">
+            <h2 class="footer-title">UNICEF</h2>
+            <h4 class="footer-subtitle">This platform has been upgraded in partnership with UNICEF</h4>
+            <a href="https://www.unicef.org/serbia" target="_blank"><img class="unicef-logo" src="/assets/images/unicef_logo.png" alt=""></a>
+            <p class="disclaimer">Disclaimer: The views and opinions expressed in this platform are those of NADEL <br> and do not necessarily reflect the policies or views of UNICEF</p>
+        </div>
+        <div class="footer-main-item footer-logo-container">
+            <h2 class="footer-title">Partneri</h2>
+            <a href="http://zvecanska.org.rs" target="_blank"><img class="unicef-logo" src="/assets/images/zvecanska.jpg" alt=""></a>
+            <a href="https://www.childhelplineinternational.org" target="_blank"><img class="unicef-logo" src="/assets/images/child-helpline-international.png" alt=""></a>
+            <a href="https://www.minrzs.gov.rs/sr" target="_blank"><img class="unicef-logo" src="/assets/images/ministarstvo-za-rad.png" alt=""></a>
+        </div>
+    </section>
+    <section class="footer-social">
+        <ul class="footer-social-list">
+            <li><a href="https://www.facebook.com/nacionalnadecijalinija/"><i class="fab fa-facebook"></i></a></li>
+            <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+        </ul>
+    </section>
+    <section class="footer-legal">
+        <ul class="footer-legal-list">
+            <!-- <li><a href="#">Politika privatnosti</a></li> -->
+            <li class="legal-link">&copy; 2020 <a href="https://sipoddigital.com" target="_blank">Sipod Digital.</a> All Rights Reserved.</li>
+        </ul>
+    </section>
+</footer>
+    <a class="hide-site" href="https://google.com" target="_self" rel="noopener noreferrer">Izađi</span><i class="fas fa-sign-out-alt" aria-hidden="true"></i></span></a>
+  </body>
+</html>

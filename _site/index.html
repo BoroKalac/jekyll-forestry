@@ -1,0 +1,843 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Početna</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <script type="text/javascript" src="/assets/js/navigation.js"></script>
+    <script src="https://kit.fontawesome.com/ff530a4a56.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      /*
+      here you can add user_data to config object
+      eg.   
+      custom_user_data = {
+              externalId: "your_id_for_user",
+              email: "email",
+              username: "username",
+              firstname: "user_first_name",
+              lastname: "user_last_name",
+              additionalFields: "nickname=userNickname; phoneNumber=121212"
+      };
+      */
+  
+       if("undefined"!==typeof requirejs)window.onload=function(e){requirejs(["https://paldesk.io/api/widget-client?apiKey=d95de79f8b5d13418d03b0f2c01b8821"],function(e){"undefined"!==typeof custom_user_data&&(beebeeate_config.user_data=custom_user_data),BeeBeeate.widget.new(beebeeate_config)})};
+      else{var s=document.createElement("script");s.async=!0,s.src="https://paldesk.io/api/widget-client?apiKey=d95de79f8b5d13418d03b0f2c01b8821",s.onload=function(){"undefined"!==typeof custom_user_data&&(beebeeate_config.user_data=custom_user_data),BeeBeeate.widget.new(beebeeate_config)};
+      if(document.body){
+          document.body.appendChild(s)
+      }
+      else if(document.head){
+          document.head.appendChild(s)
+      }
+      }
+  
+  </script>
+  </head>
+  <body>
+    <header class="top-header">
+    <ul class="top-header-list">
+        <li><a href="tel:116-111">Pozovite: <strong>116 111</strong></a></li>
+        <li class="chat-container"><button class="chat-button" onclick=window.BeeBeeate.widget.openChat()><img src="/assets/images/speech-bubble.png" alt="">SOS Chat</button></li>
+    </ul>
+</header>
+    <nav class="navigation-top" id="navigationTop">
+  <div class="logo-container">
+    <a href="/"><img class="logo" src="/assets/images/Logo-nadel.png" alt=""></a>
+  </div>
+  <div class="list-container">
+    
+      <a href="/"  class="menu-item-active">
+        <span>Početna</span>
+      </a>
+    
+      <a href="/6-12.html" >
+        <span>Deca (6-12)</span>
+      </a>
+    
+      <a href="/13-18.html" >
+        <span>Tinejdžeri (13-18)</span>
+      </a>
+    
+      <a href="/19-30.html" >
+        <span>Mladi (19 i više)</span>
+      </a>
+    
+      <a href="/roditelji.html" >
+        <span>Roditelji</span>
+      </a>
+    
+      <a href="/o-nadelu.html" >
+        <span>O NADEL-u</span>
+      </a>
+    
+      <a href="/blog.html" >
+        <span>Blog</span>
+      </a>
+    
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</nav>
+    <div id="banner-container-id" class="banner-container">
+        <img src="/assets/images/info.png" alt="">
+        <div>
+            <p class="sos-text"><b>SOS chat</b> je usluga koja svoj deci i mladim ljudima u Srbiji omogućava da u bilo kom trenutku dobiju savetodavnu podršku putem besplatnog chat-a sa našim savetnicima, ukoliko se nađu u okolnostima u kojima su im ugrožena prava, ili u bilo kojoj drugoj situaciji kada osete potrebu za a poverljivim razgovorom sa kompetentnom osobom.</p>
+        </div>
+</div>
+    <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Početna</title>
+    <script type="text/javascript" onload="loadBanner()" src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <div class="title-subtitle-container">
+      <h1 class="main-title">Postoji rešenje!</h1>
+      <h3 class="main-subtitle">Pronađi svoju ekipu</h3>
+    </div>
+    <div class="circle-container">
+      <div id="circleBlue" class="circle circle-blue" onclick="openCirclePage('/6-12.html')">
+        <a href="/6-12.html">
+        <span>Deca</span><br> 6-12 godina
+        </a>
+      </div>
+      <div class="circle circle-green" onclick="openCirclePage('/13-18.html')">
+        <a href="/13-18.html">
+          <span>Tinejdžeri</span><br> 13-18 godina
+        </a>
+      </div>
+      <div class="circle circle-yellow" onclick="openCirclePage('/19-30.html')">
+        <a href="/19-30.html">
+          <span>Mladi</span><br> 19 i više
+        </a>
+      </div>
+    </div>
+
+    <style type="text/css">
+    <!--
+    @import url("https://fonts.googleapis.com/css?family=Montserrat");
+    @import url("https://fonts.googleapis.com/css?family=Arial");
+    @import url("https://fonts.googleapis.com/css?family=Roboto");
+    @import url("https://fonts.googleapis.com/css?family=Asul");
+
+    //
+    -->
+</style>
+<style type="text/css">
+    <!--
+    .ddr-page-wrapper * {
+        box-sizing: border-box;
+    }
+
+    .ddr-page-wrapper {
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+
+    .ddr-page-wrapper .ddr-page {
+        position: relative;
+    }
+
+    .ddr-page-wrapper .ddr-page .ddr-page-section-pre-content::after,
+    .ddr-page-wrapper .ddr-page .ddr-page-section-pre-content::before,
+    .ddr-page-wrapper .ddr-page>div::after,
+    .ddr-page-wrapper .ddr-page>div::before {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .ddr-page-wrapper div,
+    .ddr-page-wrapper h1,
+    .ddr-page-wrapper h2,
+    .ddr-page-wrapper h3,
+    .ddr-page-wrapper h4,
+    .ddr-page-wrapper h5,
+    .ddr-page-wrapper h6,
+    .ddr-page-wrapper p,
+    .ddr-page-wrapper span {
+        line-height: normal;
+    }
+
+    .ddr-page-row,
+    .ddr-page-section-wrapper .ddr-page-section {
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .ddr-page-row {
+        display: flex;
+        width: 100%;
+    }
+
+    .ddr-page-row__wrap {
+        flex-wrap: wrap;
+    }
+
+    .ddr-page-row__wrap .ddr-page-column__wrap {
+        width: 100% !important;
+    }
+
+    .ddr-page-row__wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    .ddr-page-row__wrap-reverse .ddr-page-column__wrap-reverse {
+        width: 100% !important;
+    }
+
+    .ddr-page-column {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        position: relative;
+        align-content: flex-start;
+    }
+
+    .ddr-page-widget {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dashed-border {
+        border: 1px dashed rgb(135, 135, 135);
+    }
+
+    .headline-edit-wrapper {
+        cursor: text;
+    }
+
+    .section-slider .ddr-page-section-widget-drop-suggestion-wrapper {
+        padding-bottom: 7px;
+    }
+
+    .ddr-page-widget__sections-slider .toolbox-controls {
+        justify-content: flex-start !important;
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__sub-tool--duplicate,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--duplicate,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--move,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--settings {
+        background-color: rgb(226, 118, 37);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--delete {
+        background-color: rgb(72, 72, 72);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool.ddr-widget-toolbox__tool--delete:hover {
+        background-color: rgb(58, 65, 74);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool:hover {
+        background-color: rgb(239, 56, 27);
+    }
+
+    .ddr-page-widget-overlay-wrapper:hover .ddr-widget-toolbox--section-slider {
+        border: 2px solid rgb(226, 118, 37) !important;
+    }
+
+    .ddr-widget-toolbox--active.ddr-widget-toolbox--section-slider {
+        border: 2px solid rgb(226, 118, 37);
+    }
+
+    .ddr-widget {
+        background-color: transparent;
+        background-image: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        height: auto;
+        width: auto;
+        max-height: none;
+        max-width: none;
+        min-height: 0px;
+        min-width: 0px;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .ddr-widget__rich-text {
+        position: relative;
+        cursor: auto;
+        overflow-wrap: break-word;
+        overflow: hidden;
+    }
+
+    .ddr-widget__image {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+    }
+
+    .ddr-widget__image a,
+    .ddr-widget__image img {
+        overflow: hidden;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .ddr-widget__image a,
+    .ddr-widget__image a:active,
+    .ddr-widget__image a:focus,
+    .ddr-widget__image a:hover,
+    .ddr-widget__image a:link,
+    .ddr-widget__image a:visited {
+        display: inline-block;
+        vertical-align: middle;
+        color: inherit;
+        text-decoration: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .ddr-widget__spacer {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .ddr-widget__button {
+        position: relative;
+        display: flex;
+    }
+
+    .ddr-widget__button a {
+        overflow: hidden;
+    }
+
+    .ddr-widget__button>a>div {
+        display: block;
+        overflow: hidden;
+        background-color: rgb(0, 143, 162);
+        box-sizing: content-box;
+        word-break: break-all;
+        transition: all 0.5s ease 0s;
+    }
+
+    .ddr-widget__button a,
+    .ddr-widget__button a:active,
+    .ddr-widget__button a:focus,
+    .ddr-widget__button a:hover,
+    .ddr-widget__button a:link,
+    .ddr-widget__button a:visited {
+        display: inline-block;
+        vertical-align: middle;
+        color: inherit;
+        text-decoration: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    @media (min-width: 1281px) {
+        .ddr-page-row__wrap--max {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--max .ddr-page-column__wrap--max {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--max {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--max .ddr-page-column__wrap-reverse--max {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--max,
+        .ddr-page-widget__hide--max {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1280px) and (min-width: 1025px) {
+        .ddr-page-row__wrap--1280 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--1280 .ddr-page-column__wrap--1280 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--1280 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--1280 .ddr-page-column__wrap-reverse--1280 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--1280,
+        .ddr-page-widget__hide--1280 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+        .ddr-page-row__wrap--1024 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--1024 .ddr-page-column__wrap--1024 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--1024 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--1024 .ddr-page-column__wrap-reverse--1024 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--1024,
+        .ddr-page-widget__hide--1024 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) and (min-width: 481px) {
+        .ddr-page-row__wrap--768 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--768 .ddr-page-column__wrap--768 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--768 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--768 .ddr-page-column__wrap-reverse--768 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--768,
+        .ddr-page-widget__hide--768 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 480px) and (min-width: 321px) {
+        .ddr-page-row__wrap--480 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--480 .ddr-page-column__wrap--480 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--480 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--480 .ddr-page-column__wrap-reverse--480 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--480,
+        .ddr-page-widget__hide--480 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 320px) and (min-width: 0px) {
+        .ddr-page-row__wrap--320 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--320 .ddr-page-column__wrap--320 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--320 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--320 .ddr-page-column__wrap-reverse--320 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--320,
+        .ddr-page-widget__hide--320 {
+            display: none;
+        }
+    }
+
+    #ddr-rich-text-100 * {
+        line-height: 1;
+    }
+
+    [data-ddr-page-widget-additional-css-id="c5b5d0741b"] {}
+
+    undefinedundefined[data-ddr-page-widget-additional-css-id="19a22e5ab6"] {}
+
+    undefined[data-ddr-page-widget-additional-css-id="fb087d2712"] {}
+
+    undefined[data-ddr-page-widget-additional-css-id="b4e8e9a246"] {}
+
+    [data-ddr-page-section-additional-css-id="b2505db781"] {
+        border-bottom: thin solid lightgray;
+    }
+
+    undefined[data-ddr-page-widget-additional-css-id="f96746fe04"] {}
+
+    undefined[data-ddr-page-widget-additional-css-id="512c75b32e"] {}
+
+    undefined[data-ddr-page-widget-additional-css-id="c782790b8f"] {}
+
+    undefinedundefinedundefined[data-ddr-page-widget-additional-css-id="3bbef5531f"] {
+        font-family: 'Asul', sans-serif;
+    }
+
+    #ddr-rich-text-2101 * {
+        line-height: 1.6;
+    }
+
+    undefinedundefinedundefined[data-ddr-page-widget-additional-css-id="62ed53882b"] {}
+
+    #button-2102 {
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(74, 74, 74, 1);
+    }
+
+    #button-2102:hover {
+        background-color: rgba(0, 140, 153, 1);
+        border-color: rgba(0, 140, 153, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    //
+    -->
+</style>
+<script>
+    <!--
+    (function(src, cb) {
+        var s = document.createElement('script');
+        s.setAttribute('src', src);
+        s.onload = cb;
+        (document.head || document.body).appendChild(s);
+    })('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
+        window.Blinkloader.optimize({
+            pubkey: "7e7cb2191e43d9e6ba19",
+            fadeIn: true
+        });
+    });
+
+    //
+    -->
+</script>
+<script type="text/javascript">
+    <!--
+    (function() {
+        var head = document.getElementsByTagName('head').item(0),
+            url = 'https://app.dragdropr.com/components/dependency-manager.js?version=1.0.8';
+
+        for (var i = 0; i < head.children.length; i++) {
+            if (head.children.item(i).tagName === 'SCRIPT' && head.children.item(i).src.indexOf(url) !== -1) {
+                return;
+            }
+        }
+
+        var node = document.createElement('script');
+        node.async = 1;
+        node.src = url;
+        head.insertBefore(node, null);
+    })();
+
+    //
+    -->
+</script>
+<div class="ddr-page-wrapper" data-ddr-page-id="420cc576-bc4a-11ea-9dc8-0242ac140009">
+    <div class="ddr-page">
+        <div id="ddr-5ebb4b1de2" class="ddr-page-section-wrapper ddr-page-section-wrapper-0" style="background-position: right top; background-attachment: fixed;">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-0" style="max-width: 1200px; margin: auto;">
+                <div class="ddr-page-section ddr-page-section-0" style="border-style: solid; border-width: 0px;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 ddr-page-column__hide--320" style="width: 100%;">
+                            <div id="ddr-dd21d6515a" class="ddr-page-widget ddr-page-widget__spacer ddr-page-widget-0 ddr-page-widget__hide--320">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__spacer" style="height: 57px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                            <div id="ddr-852be45cab" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="c5b5d0741b">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-100" class="ddr-widget__rich-text" style="margin: 15px 30px 30px;">
+                                        <p><span style="color: #555555; font-family: montserrat, sans-serif;"><strong><span style="font-size: 40px;">Sigurni chat je:</span></strong></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-2 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 33.3333%;">
+                            <div id="ddr-58b12867b5" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__image" style="justify-content: flex-start; padding-bottom: 15px;"><a target="_self" style="width: 114px; height: auto; margin-left: 30px;"><img src="https://cdn.dragdropr.com/47ecbaa4-76ab-4117-9a87-f6713f1de56c/" style="height: auto; width: 114px;"></a>
+                                        <div class="ddr-hot-spots__items-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-1388d162c4" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-1 " data-ddr-page-widget-additional-css-id="19a22e5ab6">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-201" class="ddr-widget__rich-text" style="margin: 0px 30px 30px;">
+                                        <p><span style="color: #555555; font-size: 25px; font-family: montserrat, sans-serif;"><strong>Uvek <strong>poverljiv</strong></strong></span></p>
+                                        <p><span style="color: #555555; font-size: 17px; font-family: montserrat, sans-serif;"><span style="font-weight: 400;">sve što napišete na sigurnom chat-u, ostaje na sigurnom chat-u, a informacije koje razmenimo koriste se isključivo za statističke potrebe obrade i analize i nisu dostupne javnosti</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 33.3333%;">
+                            <div id="ddr-1acc060439" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__image" style="justify-content: flex-start; padding-bottom: 15px;"><a target="_self" style="width: 114px; height: auto; margin-left: 30px;"><img src="https://cdn.dragdropr.com/21202194-0227-43c1-bb4c-0110959f86b8/" style="height: auto; width: 114px;"></a>
+                                        <div class="ddr-hot-spots__items-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-267096fada" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-1 " data-ddr-page-widget-additional-css-id="fb087d2712">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-211" class="ddr-widget__rich-text" style="margin: 0px 30px 30px;">
+                                        <p><span style="color: #555555; font-size: 25px; font-family: montserrat, sans-serif;"><strong>Uvek anoniman</strong></span></p>
+                                        <p><span style="color: #555555; font-size: 17px; font-family: montserrat, sans-serif;"><span style="font-weight: 400;">ne moraš da kažeš svoje ime, prezime, iz kog mesta zoveš, kao ni bilo koje druge podatke koje ne želiš da otkrivaš</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-2 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 33.3333%;">
+                            <div id="ddr-08c0ef9b1f" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__image" style="justify-content: flex-start; padding-bottom: 15px;"><a target="_self" style="width: 114px; height: auto; padding-left: 0px; margin-left: 30px;"><img src="https://cdn.dragdropr.com/1d7b595b-6435-4beb-a391-9e644741ac4d/" style="height: auto; width: 114px;"></a>
+                                        <div class="ddr-hot-spots__items-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-6f0c3bf0fa" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-1 " data-ddr-page-widget-additional-css-id="b4e8e9a246">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-221" class="ddr-widget__rich-text" style="margin: 0px 30px 30px;">
+                                        <p><span style="color: #555555; font-family: montserrat, sans-serif;"><strong><span style="font-size: 25px;">Uvek dostupan, besplatan i siguran</span></strong></span></p>
+                                        <p><span style="color: #555555; font-size: 17px; font-family: montserrat, sans-serif;">i<span style="font-weight: 400;">nformacija da si koristio sigurni chat neće biti sačuvana u istoriji…</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-f5ef2f719d" class="ddr-page-section-wrapper ddr-page-section-wrapper-1" style="background-position: right top; background-attachment: fixed;">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-1" style="max-width: 1200px; margin: auto;">
+                <div class="ddr-page-section ddr-page-section-1" data-ddr-page-section-additional-css-id="b2505db781">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 33.3333%;">
+                            <div id="ddr-a44788214e" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__image" style="justify-content: flex-start; padding-bottom: 15px;"><a target="_self" style="width: 114px; height: auto; margin-left: 30px;"><img src="https://cdn.dragdropr.com/97202807-0e7b-4c43-930a-3659261e6c13/" style="height: auto; width: 114px;"></a>
+                                        <div class="ddr-hot-spots__items-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-413654476e" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-1 " data-ddr-page-widget-additional-css-id="f96746fe04">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-1001" class="ddr-widget__rich-text" style="margin: 0px 30px 30px;">
+                                        <p><span style="font-size: 25px; font-family: montserrat, sans-serif;"><strong><span style="color: #555555;">Uvek tu da ti pruži savet </span></strong></span></p>
+                                        <p><span style="font-size: 17px; color: #555555; font-family: montserrat, sans-serif;"><span style="font-weight: 400;">kako da se nosite sa određenim problemom ili nedoumicom</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 33.3333%;">
+                            <div id="ddr-aee16a64b0" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__image" style="justify-content: flex-start; padding-bottom: 15px;"><a target="_self" style="width: 114px; height: auto; margin-left: 30px;"><img src="https://cdn.dragdropr.com/396ca877-f1e8-4dd7-8d08-f9ca93b98153/" style="height: auto; width: 114px;"></a>
+                                        <div class="ddr-hot-spots__items-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-def81805bf" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-1 " data-ddr-page-widget-additional-css-id="512c75b32e">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-1011" class="ddr-widget__rich-text" style="margin: 0px 30px 30px;">
+                                        <p><span style="font-size: 25px; font-family: montserrat, sans-serif;"><strong><span style="color: #555555;">Uvek tu da vam pokaže</span></strong></span></p>
+                                        <p><span style="color: #555555; font-size: 17px; font-family: montserrat, sans-serif;"><span style="font-weight: 400;">da koliki god da je problem sa kojim se suočavate, ne morate da ga rešavate sami</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-2 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 33.3333%;">
+                            <div id="ddr-357ad09834" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__image" style="justify-content: flex-start; padding-bottom: 15px;"><a target="_self" style="width: 114px; height: auto; margin-left: 30px;"><img src="https://cdn.dragdropr.com/1f1b30f9-b360-4c89-a97f-1f6c34432e28/" style="height: auto; width: 114px;"></a>
+                                        <div class="ddr-hot-spots__items-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-b5d1bb5ead" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-1 " data-ddr-page-widget-additional-css-id="c782790b8f">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-1021" class="ddr-widget__rich-text" style="margin: 0px 30px 30px;">
+                                        <p><span style="font-size: 25px; font-family: montserrat, sans-serif;"><strong><span style="color: #555555;">Uvek otvoren&nbsp;</span></strong></span></p>
+                                        <p><span style="color: #555555; font-size: 17px; font-family: montserrat, sans-serif;"><span style="font-weight: 400;"><span style="font-size: 17px;"><span style="color: #555555;">za sva vaša pitanja </span></span>bilo da se radi o vršnjačkom ili porodičnom, fizičkom ili psihološkom zlostavljanju, zanemarivanju, negiranju vaših prava ili vašoj potrebi da sa nekim porazgovarate o nekoj situaciji sa kojom ne možete sami da se nosite.</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-ec283c7a1c" class="ddr-page-section-wrapper ddr-page-section-wrapper-2">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-2" style="max-width: 1200px; margin: auto;">
+                <div class="ddr-page-section ddr-page-section-2" style="border-style: groove; border-color: rgba(155, 155, 155, 0.11);">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                            <div id="ddr-5ef008d953" class="ddr-page-widget ddr-page-widget__spacer ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__spacer" style="height: 65px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 75%;">
+                            <div id="ddr-9398337370" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="3bbef5531f">
+                                <div class="ddr-widget" style="background-position: center center;">
+                                    <div id="ddr-rich-text-2100" class="ddr-widget__rich-text" style="margin: 0px 30px;">
+                                        <p><span style="font-family: montserrat, sans-serif; color: #555555;"><strong><span style="font-size: 32px;">Istorija pretraživanja na vašem uređaju</span></strong></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-38808639c3" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-1 " data-ddr-page-widget-additional-css-id="62ed53882b">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-2101" class="ddr-widget__rich-text" style="margin: 20px 30px 0px;">
+                                        <p><strong><span style="font-family: montserrat, sans-serif; color: #555555;">Ako ne želite evidenciju o tome koje ste veb-stranice posetili preko Chrome-a, možete da izbrišete celokupnu istoriju pregledanja ili njen deo. Brisanje istorije pregledanja će se primeniti na svim uređajima na kojim ste uključili sinhronizaciju i prijavljeni ste u Chrome.</span></strong></p>
+                                        <p><strong><span style="font-family: montserrat, sans-serif; color: #555555;">Istorija će biti uklonjena iz Chrome-a. Osim toga, možete i da izbrišete istoriju Google pretrage sa naloga.</span></strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-4e6fa25f40" class="ddr-page-widget ddr-page-widget__button ddr-page-widget-2 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__button" style="justify-content: flex-start;"><a href="https://support.google.com/chrome/answer/95589?co=GENIE.Platform%3DAndroid&amp;hl=sr&amp;oco=0&amp;dark=1" target="_blank" style="margin: 30px; border-radius: 92px; border-width: 1px; border-color: rgb(0, 140, 153); border-style: solid;">
+                                            <div id="button-2102" style="padding: 5px 40px; font-size: 18px; font-weight: bold;">Više</div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 25%;">
+                            <div id="ddr-bac4df504a" class="ddr-page-widget ddr-page-widget__spacer ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__spacer" style="height: 100px;"></div>
+                                </div>
+                            </div>
+                            <div id="ddr-34fb98afa5" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-1 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__image" style="justify-content: center; padding-bottom: 15px;"><a target="_self" style="width: 238px; height: auto;"><img src="https://cdn.dragdropr.com/1427f3aa-39fa-43f7-abca-f5a597a704b9/" style="height: auto; width: 238px;"></a>
+                                        <div class="ddr-hot-spots__items-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-2 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                            <div id="ddr-201377d920" class="ddr-page-widget ddr-page-widget__spacer ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__spacer" style="height: 60px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ddr-page-row ddr-page-row-3 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+            <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                <div id="ddr-4963dd8d2c" class="ddr-page-widget ddr-page-widget__spacer ddr-page-widget-0 ">
+                    <div class="ddr-widget">
+                        <div class="ddr-widget__spacer" style="height: 100px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <script>
+      function openCirclePage(url) {
+        window.open(url, '_self');
+      };
+    </script>
+  </body>
+</html>
+
+    <footer class="footer-container">
+    <section class="footer-main">
+        <div class="footer-main-item">
+            <h2 class="footer-title">O nama</h2>
+                <ul>
+                    <li><a href="/o-nadelu.html">O NADELU</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                </ul>
+        </div>
+        <div class="footer-main-item">
+            <h2 class="footer-title">Chat i telefon</h2>
+                <ul>
+                    <li><a href="/6-12.html">Deca</a></li>
+                    <li><a href="/13-18.html">Tinejdžeri</a></li>
+                    <li><a href="/19-30.html">Mladi</a></li>
+                    <li><a href="/roditelji.html">Roditelji</a></li>
+                </ul>
+        </div>
+        <div class="footer-main-item">
+            <h2 class="footer-title">UNICEF</h2>
+            <h4 class="footer-subtitle">This platform has been upgraded in partnership with UNICEF</h4>
+            <a href="https://www.unicef.org/serbia" target="_blank"><img class="unicef-logo" src="/assets/images/unicef_logo.png" alt=""></a>
+            <p class="disclaimer">Disclaimer: The views and opinions expressed in this platform are those of NADEL <br> and do not necessarily reflect the policies or views of UNICEF</p>
+        </div>
+        <div class="footer-main-item footer-logo-container">
+            <h2 class="footer-title">Partneri</h2>
+            <a href="http://zvecanska.org.rs" target="_blank"><img class="unicef-logo" src="/assets/images/zvecanska.jpg" alt=""></a>
+            <a href="https://www.childhelplineinternational.org" target="_blank"><img class="unicef-logo" src="/assets/images/child-helpline-international.png" alt=""></a>
+            <a href="https://www.minrzs.gov.rs/sr" target="_blank"><img class="unicef-logo" src="/assets/images/ministarstvo-za-rad.png" alt=""></a>
+        </div>
+    </section>
+    <section class="footer-social">
+        <ul class="footer-social-list">
+            <li><a href="https://www.facebook.com/nacionalnadecijalinija/"><i class="fab fa-facebook"></i></a></li>
+            <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+        </ul>
+    </section>
+    <section class="footer-legal">
+        <ul class="footer-legal-list">
+            <!-- <li><a href="#">Politika privatnosti</a></li> -->
+            <li class="legal-link">&copy; 2020 <a href="https://sipoddigital.com" target="_blank">Sipod Digital.</a> All Rights Reserved.</li>
+        </ul>
+    </section>
+</footer>
+    <a class="hide-site" href="https://google.com" target="_self" rel="noopener noreferrer">Izađi</span><i class="fas fa-sign-out-alt" aria-hidden="true"></i></span></a>
+  </body>
+</html>

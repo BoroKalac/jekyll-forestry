@@ -1,0 +1,123 @@
+.footer-container {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #3ab0b5;
+  color: #bbb;
+  line-height: 1.5;;
+  color: #bbb;
+  line-height: 1.5;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #eee;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-title {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .footer-subtitle {
+    color: white;
+  }
+  
+  .container {
+    flex: 1;
+  }
+  
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .disclaimer {
+    color: white;
+    font-size: 12px;
+  }
+
+  .unicef-logo {
+    width: 200px;
+  }
+
+  .footer-logo-container {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      padding-bottom: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 477px) {
+    .footer-main {
+      justify-content: space-evenly;
+    }
+  }
+
+  @media only screen and (min-width: 1240px) {
+    .footer-main {
+      justify-content: space-evenly;
+    }
+  }
+  .footer-main-item {
+    padding: 1.25rem;
+    min-width: auto;
+  }
+  
+  .footer-social {
+    background-color: #1e9096;
+  }
+
+  .footer-social-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25em;
+    margin: 0;
+  }
+
+  .footer-social-list li {
+    font-size: 3rem;
+  }
+  
+  .footer-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #157a7e;
+    color: white;
+    font-size: 20px;
+  }
+
+  .footer-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+  }
+  
+  .footer-legal-list li:nth-last-child(2) {
+      flex: 1;
+  }
+
+  .legal-link a:hover {
+    text-decoration: none;
+    color: rgb(255, 0, 230);
+  }
+}  

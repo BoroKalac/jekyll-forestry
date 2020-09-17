@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <script type="text/javascript" src="/assets/js/navigation.js"></script>
+    <script src="https://kit.fontawesome.com/ff530a4a56.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      /*
+      here you can add user_data to config object
+      eg.   
+      custom_user_data = {
+              externalId: "your_id_for_user",
+              email: "email",
+              username: "username",
+              firstname: "user_first_name",
+              lastname: "user_last_name",
+              additionalFields: "nickname=userNickname; phoneNumber=121212"
+      };
+      */
+  
+       if("undefined"!==typeof requirejs)window.onload=function(e){requirejs(["https://paldesk.io/api/widget-client?apiKey=d95de79f8b5d13418d03b0f2c01b8821"],function(e){"undefined"!==typeof custom_user_data&&(beebeeate_config.user_data=custom_user_data),BeeBeeate.widget.new(beebeeate_config)})};
+      else{var s=document.createElement("script");s.async=!0,s.src="https://paldesk.io/api/widget-client?apiKey=d95de79f8b5d13418d03b0f2c01b8821",s.onload=function(){"undefined"!==typeof custom_user_data&&(beebeeate_config.user_data=custom_user_data),BeeBeeate.widget.new(beebeeate_config)};
+      if(document.body){
+          document.body.appendChild(s)
+      }
+      else if(document.head){
+          document.head.appendChild(s)
+      }
+      }
+  
+  </script>
+  </head>
+  <body>
+    {% include header.html %}
+    {% include navigation.html %}
+    {% include banner.html %}
+    {{ content }}
+    {% include footer.html %}
+    {% include hide-site.html %}
+  </body>
+</html>
